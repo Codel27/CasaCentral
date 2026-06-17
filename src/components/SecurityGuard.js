@@ -40,14 +40,14 @@ export default function SecurityGuard() {
       }
     };
 
-    document.addEventListener("contextmenu", handleContextMenu);
-    document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("dragstart", handleDragStart);
+    // document.addEventListener("contextmenu", handleContextMenu);
+    // document.addEventListener("keydown", handleKeyDown);
+    // document.addEventListener("dragstart", handleDragStart);
 
     return () => {
-      document.removeEventListener("contextmenu", handleContextMenu);
-      document.removeEventListener("keydown", handleKeyDown);
-      document.removeEventListener("dragstart", handleDragStart);
+      // document.removeEventListener("contextmenu", handleContextMenu);
+      // document.removeEventListener("keydown", handleKeyDown);
+      // document.removeEventListener("dragstart", handleDragStart);
     };
   }, []);
 
